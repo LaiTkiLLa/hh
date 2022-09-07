@@ -1,0 +1,8 @@
+body {
+   color: 'black';
+   font-size: 30px;
+}
+
+#header {
+    background: #3d3c66;
+}

@@ -1,0 +1,87 @@
+.header-1{
+	width: 55%;
+	height: 104px;
+	background: #FFFFFF;
+	float: left;
+}
+
+.logo_settings li{
+	display: inline-block;
+}
+
+.logo{
+	position: absolute;
+	left: 12.5%;
+	padding-top: 18px;
+}
+
+.line{
+	position: absolute;
+	left: 15%;
+	padding-top: 18px;
+}
+
+.name{
+	position: absolute;
+	left: 16%;
+	padding-top: 25px;
+}
+
+.for{
+	position: absolute;
+	left: 22.4%;
+	font-family: 'Roboto';
+	font-size: 12px;
+	align-items: center;
+	color: #525252;
+	padding-top: 25px;
+}
+
+.header-2{
+	width: 45%;
+	height: 104px;
+	background: #FFFFFF;
+	float: left;
+}
+
+.profile_settings li{
+	display: inline-block;
+}
+
+.main_menu{
+	width: 15%;
+	height: 640px;
+	background-color: #EB5757;
+	float: left;
+	margin-left: 15%;
+	float: left;
+}
+
+.list_menu li{
+	list-style-type: none;
+	position: relative;
+	font-family: 'Roboto';
+	font-size: 16px;
+	color: #525252;
+	padding-top: 15px;
+}
+
+.orders{
+	width: 50%;
+	background-color: #EB1157;
+	float: left;
+	margin-left: 1%;
+}
+
+.orders_menu li{
+	list-style-type: none;
+	font-size: 14px;
+	font-family: 'Roboto';
+	color: #525252;
+}
+
+.order_hrefs {
+	color: #FFFFFF;
+}
+
+

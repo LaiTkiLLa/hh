@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Личный кабинет</title>
+	{% load static %}
+	<link href="{% static 'css/style1.css' %}" rel="stylesheet">
+</head>
+<body>
+<div id='wrapper'>
+	<div class='header-1'>
+		<ul class='logo_settings'>
+			<li class='line'><img src="../../static/images/line36.png"></li>
+<!--			<li class='logo'><img src="../../static/image_solber/Logo.png"></li>-->
+			<li class='line'><img src="../../static/images/line36.png"></li>
+			<li class='name'><img src="../../static/images/name106.png"></li>
+			<li class='for'>Для транспортной <br> компании</li>
+		</ul>
+	</div>
+	<div class='header-2'>
+		<ul class='profile_settings'>
+			<li>Уведомления</li>
+			<li>Сообщения</li>
+			<li>Помощь</li>
+			<li>НТК Солбер</li>
+		</ul>
+	</div>
+	<div class='main_menu'>
+		<ul class='list_menu'>
+			<li>Заявки</li>
+			<li>Профиль</li>
+			<li>Баланс</li>
+			<li>Биржа перевозок</li>
+			<li>ГСМ</li>
+			<li>Машины</li>
+			<li>Водители</li>
+			<li>Калькулятор</li>
+			<li>Помощь</li>
+			<li><hr></li>
+			<li>Выйти</li>
+		</ul>
+	</div>
+	<div class='orders'>
+		<ul class='orders_menu'>
+			<h1>Заявки</h1>
+			<li>В разделе заявок вы можете просматривать и управлять доступынми заявками детально. Вы можете искать, фильтровать и сортировать заявки так, как вам удобно. Доступ в этот раздел будет ограничен пока вы не заполните профиль. Только <br> перевозчики и водители могут получить доступ к этому разделу. Вносимые вами изменения будут утверждены после проверки.</li>
+			<li class='order_hrefs'>Все заявки</li>
+			<li>ZAYAVKI</li>
+				{% for i in response %}
+				{{ i.NUMBER }}
+				{% endfor %}
+			<li class='order_hrefs'>Активные</li>
+<!--			<li class='order_hrefs'>Выполненные</li>-->
+<!--			<li class='order_hrefs'>Поиск</li>-->
+<!--			<li class='order_hrefs'>Фильтры</li>-->
+
+		</ul>
+	</div>
+</div>
+</body>
+</html>

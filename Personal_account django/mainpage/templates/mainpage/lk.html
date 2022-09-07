@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Личный кабинет</title>
+	{% load static %}
+	<link href="{% static 'css/style3.css' %}" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style3.css">
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+<div id='wrapper'>
+	<div class='header-1'>
+		<ul class='logo_settings'>
+			<li class='logo'><img src="../../static/image_solber/Logo36.png"></li>
+			<li class='line'><img src="../../static/image_solber/line36.png"></li>
+			<li class='name'><img src="../../static/image_solber/name106.png"></li>
+			<li class='for'>Для транспортной <br> компании</li>
+		</ul>
+	</div>
+	<div class='header-2'>
+		<ul class='profile_settings'>
+			<li><a href=""><img src="../../static/image_solber/Dindon.png" style="margin-left: 37px"><br>Уведомления</a></li>
+			<li><a href=""><img src="../../static/image_solber/messages.png" style="margin-left: 33px"><br>Сообщения</a></li>
+			<li><a href=""><img src="../../static/image_solber/help.png" style="margin-left: 20px"><br>Помощь</a></li>
+			<li><a href=""><img src="../../static/image_solber/Login.png" style="margin-left: 30px"><br>НТК Солбер</a></li>
+		</ul>
+	</div>
+	<div class='body-1'>
+		<ul class='list_menu'>
+			<li>Заявки</li>
+			<li>Профиль</li>
+			<li>Баланс</li>
+			<li>Биржа перевозок</li>
+			<li>ГСМ</li>
+			<li>Машины</li>
+			<li>Водители</li>
+			<li>Калькулятор</li>
+			<li>Помощь</li>
+			<li><hr></li>
+			<li>Выйти</li>
+		</ul>
+	</div>
+	<div class='body-2'>
+		<ul class='orders_menu'>
+			<h1>Заявки</h1>
+			<li>В разделе заявок вы можете просматривать и управлять доступынми заявками детально. Вы можете искать, фильтровать и сортировать заявки так, как вам удобно. Доступ в этот раздел будет ограничен пока вы не <a href="">заполните профиль</a>. Только <br> перевозчики и водители могут получить доступ к этому разделу. Вносимые вами изменения будут утверждены после проверки.</li>
+		</ul>
+		<div class="my_order">
+			<ul class="filter_order">
+				<li>Все заявки</li>
+				<li>Активные</li>
+				<li>Выполненные</li>	
+			</ul>
+		</div>
+		<div class="search">
+			<span class="icon"><i class="fa fa-search"></i></span>
+			<input type="search" placeholder="Поиск заявки по номеру, статусу и тд" name="">
+		</div>
+		<table class="delivery_info">
+			<tr>
+				<td>НОМЕР РЕЙСА</td>
+				<td>СТАТУС</td>
+				<td>ДАТА ПОСТАВКИ</td>
+			</tr>
+			{% for i in response %}
+			<tr><td>{{ i.NUMBER }}</td></tr>
+			{% endfor %}
+		</table>
+	</div>
+</div>
+</body>
+</html>
